@@ -4,6 +4,7 @@ keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
 keyUp =  keyboard_check_pressed(vk_up);
 keySpace = keyboard_check_pressed(vk_space);
+keyDash = keyboard_check_pressed(vk_lshift); 
 var move = keyRight - keyLeft;
 
 hspd = move*walkspd;
@@ -90,11 +91,13 @@ if(stuckToWall == true)
 		
 		stuckToWall = false;
 	}
-	
-	
-	
-	
 }
 
 x = x + hspd;
 y = y + vspd;
+
+
+//Dash
+if (keyDash) {
+	x+=(dashSpeed*sign(hspd));
+}

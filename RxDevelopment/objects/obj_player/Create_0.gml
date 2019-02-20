@@ -8,3 +8,4 @@ flatJump = 4;
 stuckToWall = false;
 wallSideJump = 10;
 wallVertJump = 3;
+dashSpeed = 65; 
