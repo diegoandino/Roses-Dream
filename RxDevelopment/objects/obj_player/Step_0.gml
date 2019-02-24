@@ -23,7 +23,20 @@ if(place_meeting(x+hspd,y,obj_wallParent))
 		x = x+sign(hspd);	
 	}
 	hspd = 0;
-}	
+}
+else if(place_meeting(x+hspd,y,obj_platfloorParent))
+{
+	while(!place_meeting(x+sign(hspd),y,obj_platfloorParent))
+	{
+		x = x+sign(hspd);	
+	}
+	hspd = 0;
+}
+else if(place_meeting(x,y+vspd,obj_wallParent))
+{
+	stuckToWall = true;
+	hspd = 0;
+}
 
 // Vert Collision: floor
 if(place_meeting(x,y+vspd,obj_platfloorParent))
@@ -34,62 +47,82 @@ if(place_meeting(x,y+vspd,obj_platfloorParent))
 	}
 	vspd = 0;
 }
-// Ceiling
-if (place_meeting(x,y-vspd,obj_ceilingParent))
-{
-	while(!place_meeting(x,y-sign(vspd),obj_ceilingParent))
-	{
-		y = y-sign(vspd);	
-	}
-	vspd = 0;
-	stuckToWall = false;
-}	
-
 // Jump Stuff
 if(place_meeting(x,y+1,obj_platfloorParent) and keySpace)
 {
 	vspd = -flatJump;
 }
-// Drop Stuff
-else if(place_meeting(x,y-1,obj_ceilingParent) and keySpace)
+// Ceiling
+if (place_meeting(x,y+vspd,obj_ceilingParent))
 {
-	vspd = 3;
-}
+	while(!place_meeting(x,y+sign(vspd),obj_ceilingParent))
+	{
+		y = y+sign(vspd);	
+	}
+	vspd = 0;
+	stuckToWall = false;
+}	
+// Drop Stuff
+//if(place_meeting(x,y-1,obj_ceilingParent) and keySpace)
+//{
+//	vspd = dropDistance;//defined in Create
+//}
 
 
 
 if(stuckToWall == true)
 {
-	//colliding with ceiling
-	if(!place_meeting(x,y-1,obj_wallParent))
-	{
-		vspd = 0;
-		hspd = 0;	
-	}
-	else
-	{
-		vspd = 0;
-		hspd = hspdOG;
-		if(keySpace)
-		{
-			vspd = 3;	
-		}
-	}
+		
+	
 	// jumping up a wall
 	if(keySpace)
 	{
 		if(place_meeting(x+1,y,obj_wallParent))
 		{
 			hspd = -wallSideJump;
-			vspd = -wallVertJump;
 		}
 		else if(place_meeting(x-1,y,obj_wallParent))
 		{
 			hspd = wallSideJump;
+		}
+		vspd = -wallVertJump;
+		if(place_meeting(x,y-wallVertJump,obj_ceilingParent))
+		{
+			while(!place_meeting(x,y-1,obj_ceilingParent))
+			{
+				y = y-1;	
+			}
+			vspd = 0;
+		}
+		else
+		{
 			vspd = -wallVertJump;
 		}
 		
 		stuckToWall = false;
+	}
+	else
+	{
+		vspd = 0;
+		hspd = 0;
+	}
+}
+
+
+//Dash
+if (keyDash) {
+	dashAct = dashSpeed*sign(hspd);
+	if(place_meeting(x+dashAct,y,obj_EnvironmentPieceParent))
+	{
+		while(!place_meeting(x+sign(hspd),y,obj_EnvironmentPieceParent))
+		{
+			x = x+sign(hspd);	
+		}
+		hspd = 0;
+	}
+	else
+	{
+		hspd = dashAct;	
 	}
 }
 
@@ -97,7 +130,6 @@ x = x + hspd;
 y = y + vspd;
 
 
-//Dash
-if (keyDash) {
-	x+=(dashSpeed*sign(hspd));
-}
+
+	
+
