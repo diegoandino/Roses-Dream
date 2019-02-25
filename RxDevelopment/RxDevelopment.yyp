@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "2fee67da-cd3c-4e3f-b7b7-92b44de4477f",
-            "Value": {
-                "id": "3ab700ca-cc4a-4bd7-aabd-d8515e3b3b3b",
-                "resourcePath": "objects\/obj_regCeiling\/obj_regCeiling.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "37abff8d-a9a3-4b9a-9c36-8fe22da3208a",
             "Value": {
                 "id": "aa2defcf-b0ce-4ae9-b56e-554ea4c151d3",
