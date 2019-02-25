@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Create Player Object
 // You can write your code in this editor
 hspd = 0;
 vspd = 0;
@@ -10,3 +10,4 @@ wallSideJump = 10;
 wallVertJump = 8;
 dropDistance = 10;
 dashSpeed = 65; 
+global.numOfHearts = 3;

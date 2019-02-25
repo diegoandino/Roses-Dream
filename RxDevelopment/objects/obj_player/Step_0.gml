@@ -1,3 +1,4 @@
+/// @description Player updates and mechanics 
 /*
 Player updates and mechanics 
 */
@@ -115,7 +116,7 @@ if (keyDash) {
 	dashAct = dashSpeed*sign(hspd);
 	if(place_meeting(x+dashAct,y,obj_EnvironmentPieceParent))
 	{
-		while(!place_meeting(x+sign(hspd),y,obj_EnvironmentPieceParent))
+		while(!place_meeting(x+sign(dashAct),y,obj_EnvironmentPieceParent))
 		{
 			x += sign(hspd);	
 		}
@@ -127,6 +128,9 @@ if (keyDash) {
 		hspd = dashAct;	
 	}
 }
+
+
+
 
 x = x + hspd;
 y = y + vspd;
