@@ -33,15 +33,68 @@
         "50e6622f-9fce-440c-acb9-2e313f5a94bf",
         "12f14e07-e900-48f9-90ca-e84e2bbee09b",
         "ed19fb36-f4e2-4cf2-8329-28031ace1c1c",
-        "f37013b6-9990-4e99-aed7-343c9b10cec6"
+        "f37013b6-9990-4e99-aed7-343c9b10cec6",
+        "6cce674e-1f3a-44ee-a2e3-5be2f4c9fbd3"
     ],
     "IsDnD": false,
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "WandProjectiles",
+            "id": "e168d20d-4e3e-4983-b3e6-d7d6158af230",
+            "depth": 0,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "WandPlaceHolder",
+            "id": "2f6a6dbc-c2d5-434e-8c40-dc5ba9d1ffc3",
+            "depth": 100,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_1A5CDC1D","id": "6cce674e-1f3a-44ee-a2e3-5be2f4c9fbd3","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_1A5CDC1D.gml","creationCodeType": ".gml","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1A5CDC1D","objId": "79dda068-edc2-4f8f-a556-cdd894ea5cb3","properties": null,"rotation": 0,"scaleX": 0.1272727,"scaleY": 0.1111111,"mvc": "1.0","x": 259,"y": 630}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Player",
             "id": "e585d721-4b8b-4e1e-b8cc-7ed94c0d3319",
-            "depth": 0,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -67,7 +120,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "EnvironmentPieces",
             "id": "2c848e44-504b-40d7-a1c5-92c6cc5a1956",
-            "depth": 100,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -121,7 +174,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4281335859 },
-            "depth": 200,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -156,7 +209,7 @@
         "id": "e2d1bb7c-8564-4d8f-a7c6-f9b8ac916bf1",
         "inheritPhysicsSettings": false,
         "modelName": "GMRoomPhysicsSettings",
-        "PhysicsWorld": true,
+        "PhysicsWorld": false,
         "PhysicsWorldGravityX": 0,
         "PhysicsWorldGravityY": 10,
         "PhysicsWorldPixToMeters": 0.1,
