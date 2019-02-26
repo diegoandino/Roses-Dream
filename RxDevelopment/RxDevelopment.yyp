@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "987cb3ad-a5f9-4d6d-a2a1-f087b808b060",
+            "Value": {
+                "id": "07fb0307-8aca-4782-b216-f7cefa99fdba",
+                "resourcePath": "sprites\\CharacterIdleLeft\\CharacterIdleLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9b09cb0a-2f66-4282-aa29-5ae3f357691e",
             "Value": {
                 "id": "0ef524b5-8dcd-4ca9-bfe7-43ed8ec32c7c",

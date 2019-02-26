@@ -10,10 +10,18 @@ keySpace = keyboard_check_pressed(vk_space);
 keyDash = keyboard_check_pressed(vk_lshift); 
 var move = keyRight - keyLeft;
 
-hspd = move*walkspd;
+hspd = move * walkspd;
 hspdOG = hspd;
 vspd = vspd + grv;
 vspdOG = vspd;
+
+//Looking to the left or right
+if (keyLeft) {
+	sprite_index = CharacterIdleLeft;
+} 
+else if (keyRight) {
+	sprite_index = CharacterIdle;  
+}
 
 // Horz Collision: run into wall
 if(place_meeting(x + hspd, y, obj_wallParent))

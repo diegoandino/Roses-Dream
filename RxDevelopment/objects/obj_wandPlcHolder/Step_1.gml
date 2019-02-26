@@ -1,5 +1,5 @@
-x = obj_player.x + 75; 
-y = obj_player.y + 65;
+x = obj_player.x + 45; 
+y = obj_player.y + 20;
  
 firingDelay -= 1; 
 
