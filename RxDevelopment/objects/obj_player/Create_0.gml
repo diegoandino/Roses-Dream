@@ -11,3 +11,5 @@ wallVertJump = 8;
 dropDistance = 10;
 dashSpeed = 65; 
 global.numOfHearts = 3;
+direction = 0; 
+XSize = sprite_width; ySize = sprite_height;

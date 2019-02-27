@@ -9,7 +9,7 @@
     "bbox_bottom": 334,
     "bbox_left": 0,
     "bbox_right": 549,
-    "bbox_top": 227,
+    "bbox_top": 232,
     "bboxmode": 0,
     "colkind": 0,
     "coltolerance": 0,
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 540,
+    "height": 541,
     "layers": [
         {
             "id": "f372a84c-7e21-4b2c-b109-577850699438",
