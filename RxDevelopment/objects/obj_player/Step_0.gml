@@ -138,3 +138,5 @@ if (keyDash) {
 
 x = x + hspd;
 y = y + vspd;
+
+if global.numOfHearts < 1 room_restart();
