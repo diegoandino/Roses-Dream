@@ -1,2 +1,2 @@
 /// @description Insert desc
-frame_x = (global.guiWidth)/2 -  
+//frame_x = (global.guiWidth) / 2 -  

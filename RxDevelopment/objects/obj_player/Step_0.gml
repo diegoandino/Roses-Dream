@@ -1,4 +1,3 @@
-/// @description Player updates and mechanics 
 /*
 Player updates and mechanics 
 */
@@ -7,7 +6,8 @@ keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 keyUp =  keyboard_check_pressed(vk_up) keyboard_check(ord("W"));
 keySpace = keyboard_check_pressed(vk_space);
-keyDash = keyboard_check_pressed(vk_lshift); 
+keyDash = keyboard_check_pressed(vk_alt); 
+keyRun = keyboard_check(vk_lshift); 
 var move = keyRight - keyLeft;
 
 hspd = move * walkspd;
@@ -15,12 +15,43 @@ hspdOG = hspd;
 vspd = vspd + grv;
 vspdOG = vspd;
 
-//Character direction
-if (keyLeft) {
-	sprite_index = CharacterIdleLeft;   
-} else if (keyRight) {
-	sprite_index = CharacterIdle; 
+//Character direction and anims
+
+if(move == 0 && !keyRun)
+{
+	if(keyLeft)
+	{
+		sprite_index = CharacterIdleLeft;
+	}
+	else if(keyRight)
+	{
+		sprite_index = CharacterIdle;
+	}
 }
+
+if (move != 0 && keyRun)
+{
+	if(move < 0)
+	{
+		sprite_index = spr_runAnimLeft; 
+	}
+	else
+	{
+		sprite_index = spr_runAnim; 
+	}
+}
+else
+{
+	if(keyLeft)
+	{
+		sprite_index = CharacterIdleLeft;
+	}
+	else if(keyRight)
+	{
+		sprite_index = CharacterIdle;
+	}
+} 
+
 
 // Horz Collision: run into wall
 if(place_meeting(x + hspd, y, obj_wallParent))

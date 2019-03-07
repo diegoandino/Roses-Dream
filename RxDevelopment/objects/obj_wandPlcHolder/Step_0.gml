@@ -1,9 +1,7 @@
-
-
 x = obj_player.x + 50; 
 y = obj_player.y + 20;
 
-keyFire =  keyboard_check_pressed(vk_down) ||  keyboard_check_pressed(ord("S"));
+keyFire =  mouse_check_button_pressed(mb_left) ||  keyboard_check_pressed(ord("S"));
 firingDelay -= 1; 
 
 if ((keyFire) && (firingDelay < 0)) {
