@@ -15,12 +15,11 @@ hspdOG = hspd;
 vspd = vspd + grv;
 vspdOG = vspd;
 
-//Looking to the left or right
+//Character direction
 if (keyLeft) {
-	sprite_index = CharacterIdleLeft;
-} 
-else if (keyRight) {
-	sprite_index = CharacterIdle;  
+	sprite_index = CharacterIdleLeft;   
+} else if (keyRight) {
+	sprite_index = CharacterIdle; 
 }
 
 // Horz Collision: run into wall
@@ -136,6 +135,10 @@ if (keyDash) {
 		hspd = dashAct;	
 	}
 }
+if(!freezeMotion)
+{
+	x = x + hspd;
+	y = y + vspd;
+}
 
-x = x + hspd;
-y = y + vspd;
+if global.numOfHearts < 1 room_restart();
