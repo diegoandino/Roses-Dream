@@ -2,12 +2,13 @@
 // You can write your code in this editor
 
 // enemy health management
-if(enemyHealth <= 0)
+if(enemyHealth < 1)
 {
 	instance_destroy();
 }
 
 damageFrameCounter += 1;
+
 if(damageSpr == true)
 {
 	//change spr to red
@@ -22,4 +23,14 @@ if(damageSpr == true)
 else
 {
 	sprite_index = spr_basicEnemy;	
+}
+
+//Health Updating
+if(place_meeting(x,y,obj_player))
+{
+	global.numOfHearts -= 1;
+	
+	if(global.numOfHearts == 0) {
+		room_restart(); 
+	}
 }

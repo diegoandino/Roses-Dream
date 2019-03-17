@@ -34,10 +34,12 @@ if (move != 0 && keyRun)
 	if(move < 0)
 	{
 		sprite_index = spr_runAnimLeft; 
+		hspd *= 1.5;
 	}
 	else
 	{
 		sprite_index = spr_runAnim; 
+		hspd *= 1.5; 
 	}
 }
 else
@@ -166,10 +168,9 @@ if (keyDash) {
 		hspd = dashAct;	
 	}
 }
+
 if(!freezeMotion)
 {
 	x = x + hspd;
 	y = y + vspd;
 }
-
-if global.numOfHearts < 1 room_restart();

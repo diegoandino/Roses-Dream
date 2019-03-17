@@ -1,28 +1,28 @@
 {
-    "id": "d6f7d038-4ff1-4216-8656-a445e71292c1",
+    "id": "35b8eed5-9914-47bd-96c2-22085ba374da",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_primitiveGUI",
+    "name": "oCamera",
     "eventList": [
         {
-            "id": "7c1b7acf-a37b-44e5-a64d-2d3a89a8834c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "d6f7d038-4ff1-4216-8656-a445e71292c1"
-        },
-        {
-            "id": "5c58bba3-2308-48ef-8ca6-ad7cc9232076",
+            "id": "65ba3351-ce2a-43c9-bd22-79c6314959b5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "d6f7d038-4ff1-4216-8656-a445e71292c1"
+            "m_owner": "35b8eed5-9914-47bd-96c2-22085ba374da"
+        },
+        {
+            "id": "fe08f057-f5f2-45f0-9452-df859ee01578",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "35b8eed5-9914-47bd-96c2-22085ba374da"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

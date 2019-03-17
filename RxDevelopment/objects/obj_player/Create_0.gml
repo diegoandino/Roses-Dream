@@ -14,3 +14,4 @@ freezeMotion = false;
 global.numOfHearts = 3;
 direction = 0; 
 XSize = sprite_width; ySize = sprite_height;
+healthDelay = 1; 

@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Update Player Destination
 
 if (instance_exists(follow)) {
 	xTo = follow.x; 
@@ -9,10 +8,11 @@ if (instance_exists(follow)) {
 x += (xTo - x) / 50;
 y += (yTo - y) / 50; 
 
+//Player Clamp
+
 x = clamp(x, viewWidthHalf, room_width - viewWidthHalf);
 y = clamp(y, viewHeightHalf, room_width - viewHeightHalf);
 
-draw_set_alpha(1);
-draw_set_colour(c_white);
-draw_text(x, y, string(global.numOfHearts));
+//Update Camera View
 
+camera_set_view_pos(cam, x - viewWidthHalf, y - viewHeightHalf);
