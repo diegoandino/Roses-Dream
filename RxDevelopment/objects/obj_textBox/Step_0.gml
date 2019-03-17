@@ -10,5 +10,6 @@ if(keyboard_check_pressed(interact_key))
 	else 
 	{ 
 		instance_destroy();
+		obj_player.freezeMotion = false;
 	}
 }

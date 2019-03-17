@@ -45,3 +45,6 @@ font = fnt_text;
 
 draw_set_font(font);
 text_height = string_height("M");
+
+
+obj_player.freezeMotion = true;

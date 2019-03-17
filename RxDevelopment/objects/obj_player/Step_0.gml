@@ -171,11 +171,14 @@ if (keyDash) {
 	}
 }
 
-if(!freezeMotion)
+if(freezeMotion)
 {
-	x = x + hspd;
-	y = y + vspd;
+	hspd = 0;
+	vspd = 0;
 }
+
+x = x + hspd;
+y = y + vspd;
 
 
 //Textbox

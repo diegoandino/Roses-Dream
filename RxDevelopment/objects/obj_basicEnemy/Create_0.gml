@@ -7,6 +7,7 @@ damageFrameCounter = 0;
 
 portrait_index = 2;
 voice = snd_voiceBasEnemy;
-name = "Corrupted White Blood Cell"
-text = ["Grrr!"];
+name = "Corrupt WBC"
+var firstText = "Grrr!";
+text[0] = firstText;
 speakers = [id];
