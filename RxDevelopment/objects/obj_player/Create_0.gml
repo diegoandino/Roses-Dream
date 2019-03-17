@@ -15,3 +15,12 @@ global.numOfHearts = 3;
 direction = 0; 
 XSize = sprite_width; ySize = sprite_height;
 healthDelay = 1; 
+
+portrait_index = 0;
+voice = snd_voiceProt;
+name = "Princess Chemo"
+text = ["Hey! I'm inside my bone marrow!"];
+speakers = [id];
+
+active_textbox = noone;
+radiusEnemy = 100;

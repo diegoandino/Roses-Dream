@@ -8,6 +8,8 @@ keyUp =  keyboard_check_pressed(vk_up) keyboard_check(ord("W"));
 keySpace = keyboard_check_pressed(vk_space);
 keyDash = keyboard_check_pressed(vk_alt); 
 keyRun = keyboard_check(vk_lshift); 
+keyInteract = keyboard_check_pressed(ord("E"));
+
 var move = keyRight - keyLeft;
 
 hspd = move * walkspd;
@@ -174,3 +176,33 @@ if(!freezeMotion)
 	x = x + hspd;
 	y = y + vspd;
 }
+
+
+//Textbox
+if(keyInteract)
+{
+	if(active_textbox == noone)
+	{
+		var inst = collision_rectangle(x-radiusEnemy,y-radiusEnemy,x+radiusEnemy,y+radiusEnemy,obj_basicEnemy,false,false);
+	
+		if(inst != noone)
+		{
+			with(inst)
+			{
+				var tbox = create_textbox(text,speakers);
+			}
+			active_textbox = tbox;
+		}
+	}
+	else
+	{
+		if(!instance_exists(active_textbox))
+		{
+			active_textbox = noone;
+		}
+	}
+
+}
+
+//Player Death
+if global.numOfHearts < 1 room_restart();
