@@ -5,8 +5,8 @@ if (instance_exists(follow)) {
 	yTo = follow.y;
 }
 
-x += (xTo - x) / 50;
-y += (yTo - y) / 50; 
+x += (xTo - x) / 10;
+y += (yTo - y) / 10; 
 
 //Player Clamp
 

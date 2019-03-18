@@ -189,50 +189,7 @@ x = x + hspd;
 y = y + vspd;
 
 
-//Textbox
-//if(keyInteract)
-//{
-//	if(active_textbox == noone)
-//	{
-//		var inst = collision_rectangle(x-radiusEnemy,y-radiusEnemy,x+radiusEnemy,y+radiusEnemy,obj_basicEnemy,false,false);
-	
-//		if(inst != noone)
-//		{
-//			with(inst)
-//			{
-//				var tbox = create_textbox(text,speakers);
-//			}
-//			active_textbox = tbox;
-//		}
-//	}
-//	else
-//	{
-//		if(!instance_exists(active_textbox))
-//		{
-//			active_textbox = noone;
-//		}
-//	}
-//
-//}
 
-//Firing
-//if ((!faceLeft) && (keyFire) && (firingDelay < 0)) {
-//	firingDelay = 5; 
-//	
-//	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
-//		speed = 15; 
-//		direction = other.direction;  
-//	}
-//}
-
-//if ((faceLeft) && (keyFire) && (firingDelay < 0)) {
-//	firingDelay = 5; 
-//	
-//	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
-//		speed = -15; 
-//		direction = other.direction;  
-//	}
-//}
 
 // Firing
 if((keyFire) && (firingDelay < 0))
