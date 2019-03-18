@@ -5,14 +5,14 @@ voice = snd_voiceDoctor;
 name = "Dr. DoGoodle"
 text[0] = "Welcome to your bone marrow! Right now you're deep asleep while we give you chemotherapy. (Press 'E' to continue) ";
 text[1] = "Why do I look so different, Dr. DoGoodle? What's this thing I'm holding?"
-text[2] = "Huh, It seems like you've transformed into PRINCESS CHEMO! Incredible! You're dreaming that you're fighting your LEUKEMIA! That thing you're holding is your MAGIC CHEMO WAND!";
+text[2] = "Huh? Incredible! You're dreaming that you're fighting your LEUKEMIA! That thing you're holding must be your MAGIC CHEMO WAND!";
 text[3] = "Woah! So I've got magic powers?"
-text[4] = "Yes you do! This is pretty amaz-";
-text[5] = "GRRRR!";
-text[6] = "Ah! What are those things?";
-text[7] = "Woah, looks like you've got company! Those things are cancerous WHITE BLOOD CELLS. They used to be good, but they got corrupted by the cancer and now they just want to cause trouble.";
+text[4] = "YApparently you do! This is pretty amaz-";
+text[5] = "GGGGGGRRRROOOOOWLLLL!";
+text[6] = "Ahhh! What are those things?";
+text[7] = "Woah, looks like you've got company! Those things are CANCEROUS WHITE BLOOD CELLS. They used to be good, but they got corrupted by the cancer and now they just want to cause trouble.";
 text[8] = "How do they cause trouble? What do I do?";
-text[9] = "They cause trouble by DOUBLING! Quick, you've got the wand! Make them disappear by pressing 'S' or 'DOWN'! (Press 'E' to exit text)";
+text[9] = "They cause trouble by MULTIPLYING! Quick, you've got the wand! Make them disappear by pressing 'S' or 'DOWN'! (Press 'E' to exit text)";
 speakers = [id,obj_player,id,obj_player,id,obj_basicEnemy,obj_player,id,obj_player,id];
 
 create_textbox(text,speakers);

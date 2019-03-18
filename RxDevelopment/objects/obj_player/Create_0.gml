@@ -18,7 +18,7 @@ healthDelay = 1;
 
 portrait_index = 0;
 voice = snd_voiceProt;
-name = "Princess Chemo"
+name = "Rose"
 text = ["Hey! I'm inside my bone marrow!"];
 speakers = [id];
 

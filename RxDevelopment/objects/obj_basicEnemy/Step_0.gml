@@ -25,12 +25,57 @@ else
 	sprite_index = spr_basicEnemy;	
 }
 
-//Health Updating
-if(place_meeting(x,y,obj_player))
+//Attack Player
+
+
+// Get it to work one direction, then see
+//first, need to check if player in range
+//i = 0;
+//while(i < radiusPlayer)
+//{
+//	var inst;
+//	if(place_meeting(x-i,y,obj_player))
+//	{
+//		inst = instance_create_layer(x-radiusPlayer,y,"Enemies",obj_damageBox);
+//		alarm[0] = room_speed*10;
+//		break;
+//		
+//	}
+//	i++;
+//}
+
+
+if distance_to_object(obj_player) < radiusPlayer
 {
-	global.numOfHearts -= 1;
-	
-	if(global.numOfHearts == 0) {
-		room_restart(); 
+	if(initialAttackCounter < room_speed*initialAttackDelay)
+	{
+		initialAttackCounter++;
 	}
+}
+else
+{
+	initialAttackCounter = 0;
+}
+
+if(initialAttackCounter == room_speed*initialAttackDelay and delay == false)
+{
+	attack = 1;
+}
+else
+{
+	attack = 0;
+}
+
+if(attack == 1)
+{
+	if(obj_player.x < x)
+	{
+		instance_create_layer(x-radiusPlayer,y,"Enemies",obj_damageBox);
+	} 
+	else if (obj_player.x > x)
+	{
+		instance_create_layer(x+radiusPlayer,y,"Enemies",obj_damageBox);
+	}
+	delay = true;
+	alarm[0] = room_speed*inBetweenAttackDelay;
 }
