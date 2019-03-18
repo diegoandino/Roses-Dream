@@ -12,7 +12,7 @@ text[5] = "GGGGGGRRRROOOOOWLLLL!";
 text[6] = "Ahhh! What are those things?";
 text[7] = "Woah, looks like you've got company! Those things are CANCEROUS WHITE BLOOD CELLS. They used to be good, but they got corrupted by the cancer and now they just want to cause trouble.";
 text[8] = "How do they cause trouble? What do I do?";
-text[9] = "They cause trouble by MULTIPLYING! Quick, you've got the wand! Make them disappear by pressing 'S' or 'DOWN'! (Press 'E' to exit text)";
+text[9] = "They cause trouble by DOUBLING! Quick, you've got the wand! Make them disappear by pressing 'S' or 'Left Mouse Button'! (Press 'E' to exit text)";
 speakers = [id,obj_player,id,obj_player,id,obj_basicEnemy,obj_player,id,obj_player,id];
 
 create_textbox(text,speakers);

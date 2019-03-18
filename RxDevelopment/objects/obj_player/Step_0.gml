@@ -9,6 +9,7 @@ keySpace = keyboard_check_pressed(vk_space);
 keyDash = keyboard_check_pressed(vk_alt); 
 keyRun = keyboard_check(vk_lshift); 
 keyInteract = keyboard_check_pressed(ord("E"));
+keyFire =  mouse_check_button_pressed(mb_left) ||  keyboard_check_pressed(ord("S"));
 
 var move = keyRight - keyLeft;
 
@@ -16,6 +17,7 @@ hspd = move * walkspd;
 hspdOG = hspd;
 vspd = vspd + grv;
 vspdOG = vspd;
+firingDelay -= 1; 
 
 //Character direction and anims
 
@@ -207,5 +209,24 @@ y = y + vspd;
 //
 //}
 
+//Firing
+if ((move > 0 || move == 0) && (keyFire) && (firingDelay < 0)) {
+	firingDelay = 5; 
+	
+	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
+		speed = 15; 
+		direction = other.direction;  
+	}
+}
+
+if ((move < 0 || move == 0) && (keyFire) && (firingDelay < 0)) {
+	firingDelay = 5; 
+	
+	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
+		speed = -15; 
+		direction = other.direction;  
+	}
+}
+
 //Player Death
-if global.numOfHearts < 1 room_restart();
+if health_ < 1 room_restart();

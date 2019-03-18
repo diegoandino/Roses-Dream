@@ -11,10 +11,11 @@ wallVertJump = 8;
 dropDistance = 10;
 dashSpeed = 65; 
 freezeMotion = false;
-global.numOfHearts = 3;
+health_ = 3;
 direction = 0; 
 XSize = sprite_width; ySize = sprite_height;
 healthDelay = 1; 
+firingDelay = 0; 
 
 portrait_index = 0;
 voice = snd_voiceProt;

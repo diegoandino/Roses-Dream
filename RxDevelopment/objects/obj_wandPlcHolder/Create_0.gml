@@ -1,1 +1,0 @@
-firingDelay = 0; 
