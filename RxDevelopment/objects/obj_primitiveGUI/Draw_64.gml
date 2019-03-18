@@ -12,4 +12,4 @@
 //x = clamp(x, viewWidthHalf, room_width - viewWidthHalf);
 //y = clamp(y, viewHeightHalf, room_width - viewHeightHalf);
 
-draw_text(obj_player.x,obj_player.y-300,string(global.numOfHearts)); 
+draw_text(x,y,string(global.numOfHearts)); 
