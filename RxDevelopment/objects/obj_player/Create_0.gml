@@ -4,6 +4,7 @@ hspd = 0;
 vspd = 0;
 grv = .3;
 walkspd = 4;
+faceLeft = false;
 flatJump = 9;
 stuckToWall = false;
 wallSideJump = 10;
@@ -16,6 +17,9 @@ direction = 0;
 XSize = sprite_width; ySize = sprite_height;
 healthDelay = 1; 
 firingDelay = 0; 
+
+global.numOfHearts = 3;
+
 
 portrait_index = 0;
 voice = snd_voiceProt;

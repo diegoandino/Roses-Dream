@@ -1,3 +1,4 @@
+/// @description Insert description here
 //Control the menu
 
 //Item ease in
@@ -26,7 +27,7 @@ if (menuControl) {
 //Cases
 if (menuX < gui_width - 20) && (menuCommitted != -1) {
 	switch (menuCommitted) {
-		case 2: default: room_goto(room0); break;
+		case 2: default: room_goto(roomPrototype); break;
 		case 0: game_end(); break;
 	}
 }

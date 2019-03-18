@@ -4,7 +4,7 @@ enemyHealth = 100;
 damageSpr = false;
 damageFrameCounter = 0;
 
-radiusPlayer = 60;
+radiusPlayer = 32;
 
 delay = false;
 attack = 0;

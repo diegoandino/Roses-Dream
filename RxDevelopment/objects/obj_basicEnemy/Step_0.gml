@@ -25,25 +25,6 @@ else
 	sprite_index = spr_basicEnemy;	
 }
 
-//Attack Player
-
-
-// Get it to work one direction, then see
-//first, need to check if player in range
-//i = 0;
-//while(i < radiusPlayer)
-//{
-//	var inst;
-//	if(place_meeting(x-i,y,obj_player))
-//	{
-//		inst = instance_create_layer(x-radiusPlayer,y,"Enemies",obj_damageBox);
-//		alarm[0] = room_speed*10;
-//		break;
-//		
-//	}
-//	i++;
-//}
-
 
 if distance_to_object(obj_player) < radiusPlayer
 {

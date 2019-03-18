@@ -26,10 +26,12 @@ if(move == 0 && !keyRun)
 	if(keyLeft)
 	{
 		sprite_index = CharacterIdleLeft;
+		faceLeft = true;
 	}
 	else if(keyRight)
 	{
 		sprite_index = CharacterIdle;
+		faceLeft = false;
 	}
 }
 
@@ -38,11 +40,13 @@ if (move != 0 && keyRun)
 	if(move < 0)
 	{
 		sprite_index = spr_runAnimLeft; 
+		faceLeft = true;
 		hspd *= 1.5;
 	}
 	else
 	{
 		sprite_index = spr_runAnim; 
+		faceLeft = false;
 		hspd *= 1.5; 
 	}
 }
@@ -51,10 +55,12 @@ else
 	if(keyLeft)
 	{
 		sprite_index = CharacterIdleLeft;
+		faceLeft = true;
 	}
 	else if(keyRight)
 	{
 		sprite_index = CharacterIdle;
+		faceLeft = false;
 	}
 } 
 
@@ -210,23 +216,45 @@ y = y + vspd;
 //}
 
 //Firing
-if ((move > 0 || move == 0) && (keyFire) && (firingDelay < 0)) {
-	firingDelay = 5; 
-	
-	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
-		speed = 15; 
-		direction = other.direction;  
-	}
-}
+//if ((!faceLeft) && (keyFire) && (firingDelay < 0)) {
+//	firingDelay = 5; 
+//	
+//	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
+//		speed = 15; 
+//		direction = other.direction;  
+//	}
+//}
 
-if ((move < 0 || move == 0) && (keyFire) && (firingDelay < 0)) {
-	firingDelay = 5; 
-	
-	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
-		speed = -15; 
-		direction = other.direction;  
+//if ((faceLeft) && (keyFire) && (firingDelay < 0)) {
+//	firingDelay = 5; 
+//	
+//	with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) {				
+//		speed = -15; 
+//		direction = other.direction;  
+//	}
+//}
+
+// Firing
+if((keyFire) && (firingDelay < 0))
+{
+	firingDelay = 5;	
+	if(faceLeft)
+	{
+		with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) 
+		{				
+			speed = -15;
+			direction = other.direction; 
+		}
+	}
+	else
+	{
+		with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) 
+		{				
+			speed = 15;
+			direction = other.direction; 
+		}
 	}
 }
 
 //Player Death
-if health_ < 1 room_restart();
+if global.numOfHearts < 1 room_restart();
