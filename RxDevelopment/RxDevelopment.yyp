@@ -82,7 +82,7 @@
             "Key": "0c2e3122-e424-4665-beb9-f8c065c49153",
             "Value": {
                 "id": "aba8b9da-dfc1-4b40-bb1a-71b55895633c",
-                "resourcePath": "sprites\/CharacterJump\/CharacterJump.yy",
+                "resourcePath": "sprites\\spr_jumpAnim\\spr_jumpAnim.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "2960675b-0d23-4249-95c5-43ee3897c658",
+            "Value": {
+                "id": "547ffdf4-f7cf-4eee-bf5b-4b4454f92a04",
+                "resourcePath": "sprites\\spr_wandAnim3\\spr_wandAnim3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2983524c-f507-4bb1-b52b-30d954b260cb",
             "Value": {
                 "id": "76a16f07-440c-429e-8968-29457af74ee7",
@@ -211,6 +219,14 @@
             "Value": {
                 "id": "fb01bf9f-ce9d-4d26-8e1f-086e6e443361",
                 "resourcePath": "sprites\/spr_basicEnemyDamage\/spr_basicEnemyDamage.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "31161658-fc04-4a71-9558-65c2616313e0",
+            "Value": {
+                "id": "261e78fa-9334-44e6-87cb-619fa7dd89ba",
+                "resourcePath": "sprites\\spr_wandAnim2\\spr_wandAnim2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -623,6 +639,14 @@
             }
         },
         {
+            "Key": "a5223def-9eb7-4784-9b16-9c0203fd764b",
+            "Value": {
+                "id": "3652999a-1e18-4044-8566-a412c4dff6db",
+                "resourcePath": "sprites\\spr_runAnimWand\\spr_runAnimWand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6dfa5c6-ab25-433d-ac66-21aa7454db8a",
             "Value": {
                 "id": "1e0f935e-30b2-4955-adea-d14c88d173bc",
@@ -699,6 +723,22 @@
             "Value": {
                 "id": "2e4f809f-e61a-4a28-bc99-ba96dceb97a4",
                 "resourcePath": "sprites\/menuMountains\/menuMountains.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c5deaf8e-76b8-424c-a29d-1fac63dfbfca",
+            "Value": {
+                "id": "f72e38cf-96b3-40a9-9ce0-d5958e37168b",
+                "resourcePath": "sprites\\spr_jumpAnimWand\\spr_jumpAnimWand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c834c1e2-0180-427c-8df3-ac135c2ee6f6",
+            "Value": {
+                "id": "55337327-f1cf-40e5-a1d3-44a7d66be146",
+                "resourcePath": "sprites\\spr_wandAnim1\\spr_wandAnim1.yy",
                 "resourceType": "GMSprite"
             }
         },
