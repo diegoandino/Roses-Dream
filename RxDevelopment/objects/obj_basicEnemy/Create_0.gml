@@ -18,6 +18,7 @@ name = "Corrupt WBC"
 text[0] = "Grrr!";
 speakers = [id];
 
-enemySpeed = 5;
-hspd = 0;
-movementRange = 100;
+
+movementRange = 50;
+moveLeft = true;
+hspd = 1;

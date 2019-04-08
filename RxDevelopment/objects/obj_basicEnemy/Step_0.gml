@@ -26,12 +26,44 @@ else
 }
 
 
+// MOVEMENT
+
+
+if ( moveLeft)
+{
+	hspd = -1;
+	image_xscale = 1;
+	if ( x < xstart - movementRange)
+	{
+		moveLeft = !moveLeft;
+	}
+}
+else
+{
+	hspd = 1;
+	image_xscale = -1;
+	if ( x > xstart + movementRange)
+	{
+		moveLeft = !moveLeft;
+	}
+}
+
+//ATTACK
 if distance_to_object(obj_player) < radiusPlayer
 {
 	if(initialAttackCounter < room_speed*initialAttackDelay)
 	{
 		initialAttackCounter++;
 	}
+	if(obj_player.x < x)
+	{
+		image_xscale = 1;
+	}
+	else
+	{
+		image_xscale = -1;
+	}
+	hspd = 0;
 }
 else
 {
@@ -61,14 +93,4 @@ if(attack == 1)
 	alarm[0] = room_speed*inBetweenAttackDelay;
 }
 
-// MOVEMENT
-
-//if(!place_meeting(x+hspd,y,obj_wallParent))
-//{
-//	hspd = 5;
-//}
-//else if(!place_meeting(x-hspd,y,obj_wallParent))
-//{
-	//hspd = -5;
-//}	
-//x += hspd;
+x += hspd;
