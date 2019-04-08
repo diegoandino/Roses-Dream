@@ -20,3 +20,6 @@ menu[0] = "Quit";
 
 menuItems = array_length_1d(menu);
 menuCursor = 2; 
+
+//Music
+audio_play_sound(snd_MainMenu, 8, false); 

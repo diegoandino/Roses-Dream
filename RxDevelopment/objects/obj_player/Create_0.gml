@@ -5,7 +5,7 @@ vspd = 0;
 grv = .3;
 walkspd = 4;
 faceLeft = false;
-flatJump = 9;
+flatJump = 7.5;
 stuckToWall = false;
 wallSideJump = 10;
 wallVertJump = 8;
@@ -29,3 +29,5 @@ speakers = [id];
 
 active_textbox = noone;
 radiusEnemy = 100;
+
+ladder = false; 
