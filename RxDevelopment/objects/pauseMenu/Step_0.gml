@@ -2,6 +2,7 @@ if (keyboard_check_pressed(vk_escape)) {
 	if (!pause) {
 		pause = true;
 		instance_deactivate_all(true); 
+		//audio_stop_sound(snd_)
 		audio_play_sound(snd_pauseMenu, 8, false); 
 	}
 	

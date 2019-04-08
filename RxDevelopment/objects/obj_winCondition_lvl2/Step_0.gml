@@ -16,7 +16,7 @@ if(place_meeting(x,y,obj_player) and number_enemies < 1 and  delay == false)
 		if(!instance_exists(active_textbox))
 		{
 			active_textbox = noone;
-			room_goto(room5);
+			room_goto(MenuScreen);
 		}
 	}
 

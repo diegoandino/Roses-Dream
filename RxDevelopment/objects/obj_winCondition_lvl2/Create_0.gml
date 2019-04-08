@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 
-winText[0] = "Congratulations! You've made it through the first dream stage and have completed your first round of chemotherapy. (Press 'E' to continue)";
+winText[0] = "Alright, way to go, Rose! You've made it through your second round of chemo!! For now, that's all we'll be doing.";
 winText[1] = "There's still a lot more work to do, but I can see you've got what it takes, ROSE.";
-winText[2] = "Now that this area is treated, we'll see you at the next treatment!";
-winText[3] = "Bring it on! (Press 'E' to )";
+winText[2] = "For now, just know that your parents and I are so proud of you!";
+winText[3] = "Thank you, Dr. DoGoodle! This leukemia is going dooowwn!! (Press 'E' to complete level)";
 winSpeakers = [obj_doctor,obj_doctor,obj_doctor,obj_player];
 
 goText[0] = "Oops! For the chemotherapy to fully work, you gotta get rid of ALL the bad cells! You got this!";
