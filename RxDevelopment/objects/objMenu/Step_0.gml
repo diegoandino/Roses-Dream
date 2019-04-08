@@ -26,7 +26,7 @@ if (menuControl) {
 //Cases
 if (menuX < gui_width - 20) && (menuCommitted != -1) {
 	switch (menuCommitted) {
-		case 2: default: room_goto(room1); break;
+		case 2: default: room_goto(room2); break;
 		case 0: game_end(); break;
 	}
 }

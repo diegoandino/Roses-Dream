@@ -60,3 +60,15 @@ if(attack == 1)
 	delay = true;
 	alarm[0] = room_speed*inBetweenAttackDelay;
 }
+
+// MOVEMENT
+
+//if(!place_meeting(x+hspd,y,obj_wallParent))
+//{
+//	hspd = 5;
+//}
+//else if(!place_meeting(x-hspd,y,obj_wallParent))
+//{
+	//hspd = -5;
+//}	
+//x += hspd;

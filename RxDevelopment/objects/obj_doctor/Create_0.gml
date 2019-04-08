@@ -3,7 +3,7 @@
 portrait_index = 1;
 voice = snd_voiceDoctor;
 name = "Dr. DoGoodle"
-text[0] = "Welcome to your bone marrow! Right now you're deep asleep while we give you chemotherapy. (Press 'E' to continue) ";
+text[0] = "Welcome to your bone marrow! Right now you're deep asleep while we give you chemotherapy. (Press 'E' to continue, hold to skip) ";
 text[1] = "Why do I look so different, Dr. DoGoodle? What's this thing I'm holding?"
 text[2] = "Huh? Incredible! You're dreaming that you're fighting your LEUKEMIA! That thing you're holding must be your MAGIC CHEMO WAND!";
 text[3] = "Woah! So I've got magic powers?"

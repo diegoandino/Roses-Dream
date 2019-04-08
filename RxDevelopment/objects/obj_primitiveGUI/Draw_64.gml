@@ -12,4 +12,8 @@
 //x = clamp(x, viewWidthHalf, room_width - viewWidthHalf);
 //y = clamp(y, viewHeightHalf, room_width - viewHeightHalf);
 
-draw_text(x,y,string(global.numOfHearts)); 
+for(i = 0; i < global.numOfHearts; i++)
+{
+	draw_sprite(spr_Health,-1,x+(xOffset*i),y);
+}
+//draw_text(x,y,string(global.numOfHearts));

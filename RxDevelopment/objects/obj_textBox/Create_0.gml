@@ -48,3 +48,5 @@ text_height = string_height("M");
 
 
 obj_player.freezeMotion = true;
+
+existance_counter = 0;
