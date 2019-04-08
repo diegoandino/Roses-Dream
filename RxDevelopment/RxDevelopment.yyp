@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "5f613653-9cd1-4ea7-8350-8f41698dd37c",
+            "Value": {
+                "id": "1067c708-8928-4f7c-b48d-643a89741f80",
+                "resourcePath": "sprites\\spr_climbAnim\\spr_climbAnim.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "63784ca8-ba9d-46e3-a7ae-9ebc40c9c70c",
             "Value": {
                 "id": "7d47d477-97dc-41bb-8d96-4d4afab099ca",
