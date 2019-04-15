@@ -91,22 +91,22 @@ if(place_meeting(x, y + vspd, obj_platfloorParent))
 // Jump Stuff
 if(place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWand)
 {
-		sprite_index = spr_jumpAnimWand; 
+		//sprite_index = spr_jumpAnimWand; 
 		vspd = -flatJump;
 }
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWandLeft) {
-		sprite_index = spr_jumpAnimWandLeft; 
+		//sprite_index = spr_jumpAnimWandLeft; 
 		vspd = -flatJump;
 } 
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnim) {
-		sprite_index = spr_jumpAnimWand; 
+		//sprite_index = spr_jumpAnimWand; 
 		vspd = -flatJump;
 }
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnimLeft) {
-		sprite_index = spr_jumpAnimWandLeft; 
+		//sprite_index = spr_jumpAnimWandLeft; 
 		vspd = -flatJump;
 }
 
@@ -239,5 +239,5 @@ if (ladder) {
 }
 
 
-//Player Death
+//Player Damage/death
 if (global.numOfHearts < 1) room_restart();

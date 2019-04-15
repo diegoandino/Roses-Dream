@@ -17,6 +17,7 @@ direction = 0;
 XSize = sprite_width; ySize = sprite_height;
 healthDelay = 1; 
 firingDelay = 0; 
+initDamageSpr = false;
 
 global.numOfHearts = 3;
 

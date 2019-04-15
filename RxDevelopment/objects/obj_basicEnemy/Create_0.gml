@@ -3,8 +3,9 @@
 enemyHealth = 100;
 damageSpr = false;
 damageFrameCounter = 0;
+attackAnim = false;
 
-radiusPlayer = 32;
+radiusPlayer = 8;
 
 delay = false;
 attack = 0;

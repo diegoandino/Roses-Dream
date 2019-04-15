@@ -22,7 +22,8 @@ if(damageSpr == true)
 }
 else
 {
-	sprite_index = spr_basicEnemy;	
+	if(!attackAnim){
+	sprite_index = spr_basicEnemy;	}
 }
 
 
@@ -81,16 +82,21 @@ else
 
 if(attack == 1)
 {
+	attackAnim = true;
+	sprite_index = spr_basicEnemyAttack;
 	if(obj_player.x < x)
 	{
-		instance_create_layer(x-radiusPlayer,y,"Enemies",obj_damageBox);
+		image_xscale = -1;
 	} 
 	else if (obj_player.x > x)
 	{
-		instance_create_layer(x+radiusPlayer,y,"Enemies",obj_damageBox);
+		image_xscale = 1;
+		
 	}
 	delay = true;
+	alarm[1] = room_speed*.15;
 	alarm[0] = room_speed*inBetweenAttackDelay;
+	
 }
 
 x += hspd;
