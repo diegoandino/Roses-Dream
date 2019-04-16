@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "63f91ada-a19d-4fed-af87-601ef2ad540b",
+            "Value": {
+                "id": "94c6d3f3-6357-4330-bbe0-1cb1dd147337",
+                "resourcePath": "tilesets\\tileset2\\tileset2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "640f767a-1c4e-478e-bfe1-4cd29389df2c",
             "Value": {
                 "id": "be82e1a9-b430-48a5-a877-abb291e34fa5",
@@ -988,6 +996,14 @@
                 "id": "238ad088-0038-4628-b6c8-bf31f57ca257",
                 "resourcePath": "objects\/obj_instaKillBox\/obj_instaKillBox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "deece02e-28e5-4eeb-8a47-c471fa7bdcc1",
+            "Value": {
+                "id": "6fb6fd0a-fc86-4f0b-927d-241fbd831ffc",
+                "resourcePath": "tilesets\\goo\\goo.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
