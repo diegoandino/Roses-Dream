@@ -16,3 +16,10 @@ y = clamp(y, viewHeightHalf, room_width - viewHeightHalf);
 //Update Camera View
 
 camera_set_view_pos(cam, x - viewWidthHalf, y - viewHeightHalf);
+
+//Parallax Effect
+
+//if (layer_exists("Background"))
+//{	
+//	layer_x("Background" , x/2);
+//}

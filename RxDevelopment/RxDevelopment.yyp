@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "639c4132-7bfb-4f3e-846f-a24d91c4c535",
+            "Value": {
+                "id": "90090664-51d4-4aec-8b20-7218fceccb76",
+                "resourcePath": "sprites\\ToxicGoo\\ToxicGoo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "640f767a-1c4e-478e-bfe1-4cd29389df2c",
             "Value": {
                 "id": "be82e1a9-b430-48a5-a877-abb291e34fa5",
@@ -787,6 +795,14 @@
             "Value": {
                 "id": "cc010dce-ffb7-48ad-9955-63490fb2699a",
                 "resourcePath": "sprites\/spr_runAnimWandLeft\/spr_runAnimWandLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a886ca8c-b31f-4a4a-87d3-7f7bd0d0f957",
+            "Value": {
+                "id": "cc329e5c-7ed3-4b12-9c6d-f73f0e405425",
+                "resourcePath": "sprites\\spr_doctorIdle\\spr_doctorIdle.yy",
                 "resourceType": "GMSprite"
             }
         },
