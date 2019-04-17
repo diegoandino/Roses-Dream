@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "367e15bb-a7f1-4aa4-a4f4-520d09d3f95d",
+            "Value": {
+                "id": "3fdc05d7-ed05-4fe1-9241-55aa8d2f36dc",
+                "resourcePath": "sounds\\Footstep\\Footstep.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "37abff8d-a9a3-4b9a-9c36-8fe22da3208a",
             "Value": {
                 "id": "aa2defcf-b0ce-4ae9-b56e-554ea4c151d3",
@@ -316,6 +324,14 @@
                 "id": "41ca1c51-5691-400a-bd42-f8359f991ec9",
                 "resourcePath": "sprites\/sprs_borders\/sprs_borders.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "51aaea87-038d-4653-9fc9-216cf051c028",
+            "Value": {
+                "id": "c4494b62-2bed-4784-98e1-a899e34b98af",
+                "resourcePath": "sounds\\EnemyAttack\\EnemyAttack.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -575,6 +591,14 @@
             }
         },
         {
+            "Key": "7ff995e1-5215-48bb-a87c-7b89e733731c",
+            "Value": {
+                "id": "f4e6e496-9d4e-4801-869f-320ccc9a4828",
+                "resourcePath": "sounds\\Dash\\Dash.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8197a6cf-fa95-403f-b7a2-471dd3c821ec",
             "Value": {
                 "id": "d48f4db3-da8e-40da-a714-f2a9194cb815",
@@ -676,6 +700,14 @@
                 "id": "01aed84f-88b5-4a92-af6a-d1f9277b4b33",
                 "resourcePath": "sprites\/CharacterIdle\/CharacterIdle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8ddba34e-e93d-46f4-8c0e-9b8f3c3e9f32",
+            "Value": {
+                "id": "7bc4cdda-0ca7-468a-9265-3283ff3f78bd",
+                "resourcePath": "sounds\\Jump\\Jump.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1028,6 +1060,22 @@
                 "id": "8b492758-d053-489a-bfbd-e965252fddb3",
                 "resourcePath": "objects\/pauseMenu\/pauseMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ef23f7b5-919c-439f-9bfe-dc2ee254ec55",
+            "Value": {
+                "id": "8a6755e4-e668-44eb-8065-98c4dd229f10",
+                "resourcePath": "sounds\\ToxicGooAudio\\ToxicGooAudio.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f00d26f5-3b26-41c7-b7a1-83b3ac7a8e5e",
+            "Value": {
+                "id": "325e0d23-278d-4b09-8d35-baf5f6b59019",
+                "resourcePath": "sounds\\RoseDamage\\RoseDamage.yy",
+                "resourceType": "GMSound"
             }
         },
         {
