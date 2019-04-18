@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0c6b2ddd-6ab7-40d4-88b1-f8b7bccd0076",
+            "Value": {
+                "id": "0fcb5c24-b743-471b-bcc2-b118a53d2fdb",
+                "resourcePath": "sounds\\MagicAttack\\MagicAttack.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0dd5f99f-749e-4f20-8c15-4287e70842ab",
             "Value": {
                 "id": "496a2449-422d-4348-b587-379c46260b35",
