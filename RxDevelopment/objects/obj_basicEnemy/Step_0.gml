@@ -30,7 +30,7 @@ else
 // MOVEMENT
 
 
-if ( moveLeft)
+if (moveLeft)
 {
 	hspd = -1;
 	image_xscale = 1;
@@ -49,9 +49,19 @@ else
 	}
 }
 
+if(place_meeting(x+1,y,obj_wallParent) and place_meeting(x-1,y,obj_wallParent))
+{
+	instance_destroy();
+}
+else if(place_meeting(x+1,y,obj_wallParent) or place_meeting(x-1,y,obj_wallParent))
+{
+	moveLeft = !moveLeft;
+}
+
 //ATTACK
 if distance_to_object(obj_player) < radiusPlayer
 {
+	dividing = true;
 	if(initialAttackCounter < room_speed*initialAttackDelay)
 	{
 		initialAttackCounter++;
@@ -97,6 +107,11 @@ if(attack == 1)
 	alarm[1] = room_speed*.15;
 	alarm[0] = room_speed*inBetweenAttackDelay;
 	
+}
+if(dividing && divided)
+{
+	divided = false;
+	alarm[2] = room_speed*10;
 }
 
 x += hspd;
