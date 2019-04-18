@@ -273,7 +273,7 @@
     "out_tilehborder": 2,
     "out_tilevborder": 2,
     "spriteId": "639c4132-7bfb-4f3e-846f-a24d91c4c535",
-    "sprite_no_export": true,
+    "sprite_no_export": false,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "tile_animation": {
         "AnimationCreationOrder": null,

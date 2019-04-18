@@ -14,12 +14,13 @@ menuItemHeight = font_get_size(MenuFont);
 menuCommitted = -1; 
 menuControl = true;
 
-menu[2] = "New Game";
-menu[1] = "Continue";
+menu[1] = "Play";
 menu[0] = "Quit";
 
 menuItems = array_length_1d(menu);
-menuCursor = 2; 
+menuCursor = 1; 
+
+window_set_cursor(cr_none);
 
 //Music
 audio_play_sound(snd_MainMenu, 8, false); 

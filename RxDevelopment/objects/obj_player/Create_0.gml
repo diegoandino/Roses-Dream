@@ -18,6 +18,8 @@ XSize = sprite_width; ySize = sprite_height;
 healthDelay = 1; 
 firingDelay = 0; 
 initDamageSpr = false;
+isJumping = false;
+
 
 global.numOfHearts = 3;
 
@@ -32,3 +34,8 @@ active_textbox = noone;
 radiusEnemy = 100;
 
 ladder = false; 
+
+startX = x;
+startY = y;
+
+counterFootsteps = 0;

@@ -22,7 +22,7 @@ firingDelay -= 1;
 //Character direction and anims
 
 if (move != 0)
-{
+{ 
 	if(move < 0)
 	{
 		sprite_index = spr_runAnimWandLeft; 
@@ -48,12 +48,11 @@ else if (move == 0 && sprite_index == spr_runAnimWand)
 	faceLeft = false; 
 }
 
-
-
 // Horz Collision: run into wall
 if(place_meeting(x + hspd, y, obj_wallParent))
 {
 	stuckToWall = true;
+	
 	while(!place_meeting(x + sign(hspd), y,obj_wallParent))
 	{
 		x += sign(hspd);	
@@ -91,21 +90,25 @@ if(place_meeting(x, y + vspd, obj_platfloorParent))
 // Jump Stuff
 if(place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWand)
 {
+		isJumping = true;
 		//sprite_index = spr_jumpAnimWand; 
 		vspd = -flatJump;
 }
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWandLeft) {
+		isJumping = true;
 		//sprite_index = spr_jumpAnimWandLeft; 
 		vspd = -flatJump;
 } 
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnim) {
+		isJumping = true;
 		//sprite_index = spr_jumpAnimWand; 
 		vspd = -flatJump;
 }
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnimLeft) {
+		isJumping = true;
 		//sprite_index = spr_jumpAnimWandLeft; 
 		vspd = -flatJump;
 }
@@ -123,20 +126,25 @@ if (place_meeting(x, y + vspd,obj_EnvironmentPieceParent))
 	stuckToWall = false;
 }
 
+//Wall collision stuff
 if(stuckToWall == true)
 {
+	
 	// jumping up a wall
 	if(keyJump)
 	{
 		if(place_meeting(x + 1, y, obj_wallParent))
 		{
 			hspd = -wallSideJump;
+			sprite_index = spr_wandAnim; 
 		}
 		
 		else if(place_meeting(x - 1, y, obj_wallParent))
 		{
 			hspd = wallSideJump;
+			sprite_index = spr_wandAnimLeft;
 		}
+		
 		vspd = -wallVertJump;
 		
 		if(place_meeting(x , y - wallVertJump, obj_EnvironmentPieceParent))
@@ -162,6 +170,9 @@ if(stuckToWall == true)
 		hspd = 0;
 	}
 }
+
+
+
 
 //Dash
 if (keyDash) {
@@ -219,25 +230,14 @@ if (keyUp || keyDown)
 		ladder = true;
 	
 
-	
-
-if (ladder) {
-	vspd = 0; 
-	hspd = 0; 
-	
-	if (keyUp) 
-		vspd = -2; 
-	
-	if (keyDown) 
-		vspd = 2;
-		
-	if (!place_meeting(x , y, parent_ladder)) 
-		ladder = false; 
-	
-	if (keyJump)
-		ladder = false; 
-}
-
-
 //Player Damage/death
-if (global.numOfHearts < 1) room_restart();
+if (global.numOfHearts < 1) checkpointDeath();
+
+//Walk sound
+if (sprite_index == spr_runAnimWand || sprite_index == spr_runAnimWandLeft && counterFootsteps == 0)
+//fix sound when jumping
+{
+    audio_play_sound(snd_playerStep, 8, false);
+    counterFootsteps = 10; // number of steps to wait before trying to play the sound again
+}
+else if (counterFootsteps > 0) counterFootsteps--;

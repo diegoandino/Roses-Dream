@@ -5,7 +5,7 @@
 winText[0] = "Congratulations! You've made it through the first dream stage and have completed your first round of chemotherapy. (Press 'E' to continue)";
 winText[1] = "There's still a lot more work to do, but I can see you've got what it takes, ROSE.";
 winText[2] = "Now that this area is treated, we'll see you at the next treatment!";
-winText[3] = "Bring it on! (Press 'E' to )";
+winText[3] = "Bring it on! (Press 'E' to continue)";
 winSpeakers = [obj_doctor,obj_doctor,obj_doctor,obj_player];
 
 goText[0] = "Oops! For the chemotherapy to fully work, you gotta get rid of ALL the bad cells! You got this!";

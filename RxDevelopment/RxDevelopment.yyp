@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "2981b332-ccd7-41c6-8a40-50497dbd7959",
+            "Value": {
+                "id": "d1a476b9-0683-40cc-9a63-eb1a53203e9e",
+                "resourcePath": "sprites\\spr_checkpointRed\\spr_checkpointRed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2983524c-f507-4bb1-b52b-30d954b260cb",
             "Value": {
                 "id": "76a16f07-440c-429e-8968-29457af74ee7",
@@ -386,7 +394,7 @@
             "Key": "5f613653-9cd1-4ea7-8350-8f41698dd37c",
             "Value": {
                 "id": "1067c708-8928-4f7c-b48d-643a89741f80",
-                "resourcePath": "sprites\/spr_climbAnim\/spr_climbAnim.yy",
+                "resourcePath": "sprites\\spr_climb\\spr_climb.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -823,6 +831,22 @@
             }
         },
         {
+            "Key": "b067c154-88d4-4603-820b-08333ca8734e",
+            "Value": {
+                "id": "43640157-c901-40ca-bb93-09055760d0c2",
+                "resourcePath": "objects\\obj_checkpoint\\obj_checkpoint.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b26da8d3-fc2b-4e49-b4f2-bcf2f8921ae3",
+            "Value": {
+                "id": "310fea8a-8865-4e1f-9212-a6eb901f5f1a",
+                "resourcePath": "sounds\\snd_playerStep\\snd_playerStep.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b5613be2-99e4-463d-b707-c509bbcf8c18",
             "Value": {
                 "id": "5fde5aff-1e37-4259-8efc-1a77813e03fa",
@@ -855,11 +879,27 @@
             }
         },
         {
+            "Key": "b80446d7-70d4-4289-b28b-b313c1b67e95",
+            "Value": {
+                "id": "3e82a4c8-c96b-4c31-a7b2-5b8716220470",
+                "resourcePath": "scripts\\checkpointDeath\\checkpointDeath.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b80add9f-97e0-4065-aa8b-cc918ac96a38",
             "Value": {
                 "id": "5d8fb99c-7a5f-48c5-82d7-1b65b4148a38",
                 "resourcePath": "objects\/obj_wallMiddle\/obj_wallMiddle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ba288394-338a-4351-af34-bcd76e68bf2b",
+            "Value": {
+                "id": "b422934b-cacd-4a9f-9c9d-3a495b1f2d43",
+                "resourcePath": "sprites\\spr_checkpointGreen\\spr_checkpointGreen.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -983,6 +1023,14 @@
             }
         },
         {
+            "Key": "d6a77f94-6399-41c2-bb25-dd9637cda1a2",
+            "Value": {
+                "id": "7c553a5f-5ad4-4a08-bb84-29ac17fee293",
+                "resourcePath": "objects\\obj_title\\obj_title.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d6f7d038-4ff1-4216-8656-a445e71292c1",
             "Value": {
                 "id": "ecf09ff6-f452-401b-999e-af975fbedb3f",
@@ -1055,6 +1103,14 @@
             }
         },
         {
+            "Key": "f59098fe-e987-4492-8ef4-c246d034841d",
+            "Value": {
+                "id": "c5160c3b-9968-4dd3-8df1-d8aa64cd75f4",
+                "resourcePath": "sprites\\spr_climbLeft\\spr_climbLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f6ae3ac4-298a-47dd-bd29-c3e5ecdd13c7",
             "Value": {
                 "id": "d8292eb5-3ad7-4995-9307-fe618a843f34",
@@ -1067,6 +1123,14 @@
             "Value": {
                 "id": "8356973c-8752-4317-92da-ec60d9989cf5",
                 "resourcePath": "sprites\/spr_wandAnim2Left\/spr_wandAnim2Left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd84426c-4b57-4ea2-bcbd-1202170be602",
+            "Value": {
+                "id": "0e05f723-4a7a-494e-9080-953f3f3c026f",
+                "resourcePath": "sprites\\spr_doctorIdleLeft\\spr_doctorIdleLeft.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1092,7 +1156,8 @@
         "9c0fedaf-815c-4833-a90b-210facbb81a3",
         "9f7515b4-8a8e-4e54-8f4e-e219f97a81ac",
         "3046594d-237c-4315-92e1-445b52ccc161",
-        "4cbe4c71-8659-4235-be5c-2e358793e368"
+        "4cbe4c71-8659-4235-be5c-2e358793e368",
+        "b80446d7-70d4-4289-b28b-b313c1b67e95"
     ],
     "tutorial": ""
 }
