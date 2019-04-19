@@ -116,7 +116,7 @@ if(instance_number(obj_basicEnemy) >30)
 if(dividing && divided)
 {
 	divided = false;
-	alarm[2] = room_speed*6;
+	alarm[2] = room_speed*5;
 }
 
 x += hspd;
