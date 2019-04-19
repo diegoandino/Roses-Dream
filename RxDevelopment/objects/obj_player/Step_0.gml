@@ -234,10 +234,11 @@ if (keyUp || keyDown)
 if (global.numOfHearts < 1) checkpointDeath();
 
 //Walk sound
+/*
 if (sprite_index == spr_runAnimWand || sprite_index == spr_runAnimWandLeft && counterFootsteps == 0)
 //fix sound when jumping
 {
     audio_play_sound(snd_playerStep, 8, false);
     counterFootsteps = 10; // number of steps to wait before trying to play the sound again
 }
-else if (counterFootsteps > 0) counterFootsteps--;
+else if (counterFootsteps > 0) counterFootsteps--; */
