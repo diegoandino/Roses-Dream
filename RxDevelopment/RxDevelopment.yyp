@@ -591,6 +591,14 @@
             }
         },
         {
+            "Key": "7d71f24f-a52b-4f27-a01b-c57bc6337112",
+            "Value": {
+                "id": "f12adc10-f9d6-4d77-a62e-f57b079cd3e1",
+                "resourcePath": "sprites\\spr_dashAnim\\spr_dashAnim.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7dfd7ef2-580e-4391-a38e-8270c40f7265",
             "Value": {
                 "id": "8eb2887e-30ff-41ec-94dc-76b0a8d33dc7",

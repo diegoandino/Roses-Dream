@@ -16,4 +16,6 @@ for(i = 0; i < global.numOfHearts; i++)
 {
 	draw_sprite(spr_Health,-1,x+(xOffset*i),y);
 }
-//draw_text(x,y,string(global.numOfHearts));
+
+draw_sprite(spr_basicEnemy,1,x+660,y);
+draw_text(x+680,y,"x" + string(instance_number(obj_basicEnemy)));

@@ -23,3 +23,6 @@ speakers = [id];
 movementRange = 50;
 moveLeft = true;
 hspd = 1;
+
+dividing = false;
+divided = true;
