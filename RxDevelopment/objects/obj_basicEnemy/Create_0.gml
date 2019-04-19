@@ -15,7 +15,7 @@ inBetweenAttackDelay = 2;
 
 portrait_index = 2;
 voice = snd_voiceBasEnemy;
-name = "Corrupt WBC"
+name = "Cancerous WBC"
 text[0] = "Grrr!";
 speakers = [id];
 
