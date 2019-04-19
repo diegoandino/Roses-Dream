@@ -92,6 +92,7 @@ else
 
 if(attack == 1)
 {
+	audio_play_sound(EnemyAttack, 6, false);
 	attackAnim = true;
 	sprite_index = spr_basicEnemyAttack;
 	if(obj_player.x < x)
@@ -111,7 +112,7 @@ if(attack == 1)
 if(dividing && divided)
 {
 	divided = false;
-	alarm[2] = room_speed*10;
+	alarm[2] = room_speed*6;
 }
 
 x += hspd;

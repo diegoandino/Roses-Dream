@@ -90,26 +90,26 @@ if(place_meeting(x, y + vspd, obj_platfloorParent))
 // Jump Stuff
 if(place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWand)
 {
+		audio_play_sound(Jump, 6, false);
 		isJumping = true;
-		//sprite_index = spr_jumpAnimWand; 
 		vspd = -flatJump;
 }
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWandLeft) {
+		audio_play_sound(Jump, 6, false);	
 		isJumping = true;
-		//sprite_index = spr_jumpAnimWandLeft; 
 		vspd = -flatJump;
 } 
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnim) {
+		audio_play_sound(Jump, 6, false);
 		isJumping = true;
-		//sprite_index = spr_jumpAnimWand; 
 		vspd = -flatJump;
 }
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnimLeft) {
-		isJumping = true;
-		//sprite_index = spr_jumpAnimWandLeft; 
+		audio_play_sound(Jump, 6, false);
+		isJumping = true; 
 		vspd = -flatJump;
 }
 
@@ -176,7 +176,9 @@ if(stuckToWall == true)
 
 //Dash
 if (keyDash) {
+	audio_play_sound(Dash, 6, false);
 	dashAct = dashSpeed * sign(hspd);
+	
 	if(place_meeting(x + dashAct, y, obj_EnvironmentPieceParent))
 	{
 		while(!place_meeting(x + sign(dashAct), y, obj_EnvironmentPieceParent))
@@ -204,7 +206,9 @@ y = y + vspd;
 // Firing
 if((keyFire) && (firingDelay < 0))
 {
-	firingDelay = 5;	
+	audio_play_sound(MagicAttack, 6, false);
+	firingDelay = 5;
+	
 	if(faceLeft)
 	{
 		with(instance_create_layer(x, y, "WandProjectiles", obj_wandProjectile)) 
