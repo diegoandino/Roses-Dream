@@ -10,7 +10,7 @@ radiusPlayer = 8;
 delay = false;
 attack = 0;
 initialAttackCounter = 0;
-initialAttackDelay = 1;
+initialAttackDelay = .5;
 inBetweenAttackDelay = 2;
 
 portrait_index = 2;
