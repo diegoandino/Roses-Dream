@@ -21,6 +21,7 @@ menuItems = array_length_1d(menu);
 menuCursor = 1; 
 
 window_set_cursor(cr_none);
+randomize();
 
 //Music
-audio_play_sound(snd_MainMenu, 8, false); 
+audio_play_sound(snd_MainMenu, 2, false); 

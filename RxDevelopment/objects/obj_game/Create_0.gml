@@ -13,3 +13,5 @@ global.LeukFacts = ["Cancer is when cells in your body start to grow out of cont
 "Once you've completed your chemotherapy, Rose, us doctors will have to keep an eye on you for around the next five years, making sure this dumb cancer stays away! This also means that if you or your parents have any questions, we'll be here to help you and answer them!"];
 
 window_set_cursor(cr_none);
+
+audio_play_sound(snd_MainMenu, 1, false);
