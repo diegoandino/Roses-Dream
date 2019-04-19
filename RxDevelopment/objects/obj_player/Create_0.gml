@@ -10,7 +10,12 @@ stuckToWall = false;
 wallSideJump = 10;
 wallVertJump = 8;
 dropDistance = 10;
+
 dashSpeed = 65; 
+dashing = false;
+dashingCounter = 0;
+finishDash = false;
+
 freezeMotion = false;
 health_ = 3;
 direction = 0; 

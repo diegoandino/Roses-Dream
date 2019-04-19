@@ -192,8 +192,58 @@ if (keyDash) {
 	}
 }
 
+//Dash
+/*if(keyDash or dashing) 
+{
+	finishDash = false;
+	dashAct = dashSpeed *sign(hspd);
+	sprite_index = spr_dashAnim;
+	image_xscale = sign(hspd);
+	if(keyDash)
+	{
+		dashing = true;
+	}
+	i = 0;
+	while(i < dashSpeed)
+	{
+		if(place_meeting(x+(i*sign(dashAct)),y,obj_EnvironmentPieceParent))
+		{
+			while(!place_meeting(x + sign(dashAct), y, obj_EnvironmentPieceParent))
+			{
+				x += sign(hspd);	
+			}
+			hspd = 0;
+			finishDash = true;
+		}
+		i++;
+	}
+	if(!finishDash)
+	{
+		dashingCounter += 1;
+		if(dashingCounter < 6)
+		{
+			hspd = dashAct/5;
+		}
+		else
+		{
+			dashing = false;
+			dashingCounter = 0;
+			hspd = 0;
+		}
+	}
+}*/
+
 if(freezeMotion)
 {
+	keyLeft = false;
+	keyRight = false;
+	keyUp =  false;
+	keyDown =  false;
+	keyJump = false;
+	keyDash = false;
+	keyRun = false;
+	keyInteract = false;
+	keyFire =  false;
 	hspd = 0;
 	vspd = 0;
 }
