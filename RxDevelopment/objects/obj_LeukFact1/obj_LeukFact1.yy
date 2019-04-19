@@ -1,18 +1,28 @@
 {
-    "id": "f4807b28-a21f-4052-ba04-4e3a6480c1f9",
+    "id": "2551c75d-d124-4c2f-b995-c4c9d9b007ed",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_LeukemiaFactHolder",
+    "name": "obj_LeukFact1",
     "eventList": [
         {
-            "id": "3787f9d7-1d21-48f0-ad32-4fd8811a5754",
+            "id": "20591051-844d-4568-8c6c-fa25de1d7747",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "f4807b28-a21f-4052-ba04-4e3a6480c1f9"
+            "m_owner": "2551c75d-d124-4c2f-b995-c4c9d9b007ed"
+        },
+        {
+            "id": "12b6ff15-240e-4ef9-8841-ca3d5e87a65e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "2551c75d-d124-4c2f-b995-c4c9d9b007ed"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "1844b10f-5926-4468-b00d-1bd6b44732ed",
     "visible": true
 }

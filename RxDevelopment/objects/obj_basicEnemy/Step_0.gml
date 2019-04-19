@@ -81,7 +81,7 @@ else
 	initialAttackCounter = 0;
 }
 
-if(initialAttackCounter == room_speed*initialAttackDelay and delay == false)
+if(initialAttackCounter >= room_speed*initialAttackDelay and delay == false)
 {
 	attack = 1;
 }
@@ -107,6 +107,10 @@ if(attack == 1)
 	alarm[1] = room_speed*.15;
 	alarm[0] = room_speed*inBetweenAttackDelay;
 	
+}
+if(instance_number(obj_basicEnemy) >30)
+{
+	dividing = false;
 }
 if(dividing && divided)
 {
