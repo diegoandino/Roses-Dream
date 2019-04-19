@@ -11,6 +11,7 @@ with(tbox)
 	
 	var len = array_length_1d(text);
 	var i = 0; 
+	
 	repeat(len)
 	{
 		names[i] = speakers[i].name;

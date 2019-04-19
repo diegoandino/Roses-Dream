@@ -31,9 +31,9 @@ portrait_index = 0;
 counter = 0;
 pause = false;
 
-text[0] = ""
+text[0] = "";
 page = 0;
-name = ""
+name = "";
 voice =snd_voiceProt;
 
 interact_key = ord("E");

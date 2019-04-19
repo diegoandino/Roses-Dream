@@ -133,6 +133,8 @@ if(stuckToWall == true)
 	// jumping up a wall
 	if(keyJump)
 	{
+		audio_play_sound(Jump, 6, false);
+		
 		if(place_meeting(x + 1, y, obj_wallParent))
 		{
 			hspd = -wallSideJump;
@@ -170,8 +172,6 @@ if(stuckToWall == true)
 		hspd = 0;
 	}
 }
-
-
 
 
 //Dash
@@ -237,8 +237,7 @@ if (keyDash) {
 
 if(freezeMotion)
 {
-	keyLeft = false;
-	keyRight = false;
+	move = 0;
 	keyUp =  false;
 	keyDown =  false;
 	keyJump = false;
