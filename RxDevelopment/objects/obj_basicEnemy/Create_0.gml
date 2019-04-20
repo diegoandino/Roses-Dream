@@ -26,3 +26,4 @@ hspd = 1;
 
 dividing = false;
 divided = true;
+divideDelay = 3;

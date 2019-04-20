@@ -62,6 +62,7 @@ else if(place_meeting(x+1,y,obj_wallParent) or place_meeting(x-1,y,obj_wallParen
 if distance_to_object(obj_player) < radiusPlayer
 {
 	dividing = true;
+	alarm[3] = room_speed*(divideDelay*3+.25); 
 	if(initialAttackCounter < room_speed*initialAttackDelay)
 	{
 		initialAttackCounter++;
@@ -116,7 +117,7 @@ if(instance_number(obj_basicEnemy) >30)
 if(dividing && divided)
 {
 	divided = false;
-	alarm[2] = room_speed*5;
+	alarm[2] = room_speed*divideDelay;
 }
 
 x += hspd;
