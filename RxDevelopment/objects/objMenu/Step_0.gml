@@ -20,7 +20,7 @@ if (menuControl) {
 		menuXTarget = gui_width - 20;
 		menuCommitted = menuCursor;
 		menuControl = false;
-	}
+	} 
 }
 
 //Cases

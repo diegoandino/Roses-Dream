@@ -24,4 +24,4 @@ window_set_cursor(cr_none);
 randomize();
 
 //Music
-audio_play_sound(snd_MainMenu, 2, false); 
+audio_play_sound(snd_MainMenu, 2, true); 
