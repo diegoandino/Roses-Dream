@@ -5,4 +5,4 @@ voice = snd_voiceDoctor;
 fact = [global.LeukFacts[2]];
 factSpeaker = [id];
 active_textbox = noone;
-name = "";
+name = "Dr. DoGoodle";
