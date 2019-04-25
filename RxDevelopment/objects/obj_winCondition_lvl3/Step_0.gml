@@ -16,6 +16,7 @@ if(place_meeting(x,y,obj_player) and number_enemies < 1 and  delay == false)
 		if(!instance_exists(active_textbox))
 		{
 			active_textbox = noone;
+			audio_stop_sound(snd_MainMenu);
 			room_goto(MenuScreen);
 		}
 	}

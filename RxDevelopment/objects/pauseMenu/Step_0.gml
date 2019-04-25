@@ -11,5 +11,6 @@ if (keyboard_check_pressed(vk_escape)) {
 		instance_activate_all(); 
 		audio_stop_sound(snd_pauseMenu);
 		audio_resume_sound(snd_MainMenu);
+		draw_set_color(c_white);
 	}
 }

@@ -90,10 +90,21 @@ if(place_meeting(x, y + vspd, obj_platfloorParent))
 // Jump Stuff
 if(place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWand)
 {
-		audio_play_sound(Jump, 6, false);
-		isJumping = true;
-		vspd = -flatJump;
+	
+	audio_play_sound(Jump, 6, false);
+	isJumping = true;
+	vspd = -flatJump;
+} 
+
+else if (!place_meeting(x, y + 1, obj_platfloorParent) && sign(vspd) < 0 && sprite_index == spr_runAnimWand) {
+	
+	sprite_index = spr_jumpAnimWand; 
 }
+
+if (sign(vspd) == 0 && place_meeting(x, y + 1, obj_platfloorParent) && sprite_index == spr_jumpAnimWand)
+	sprite_index = spr_runAnimWand;
+
+
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_runAnimWandLeft) {
 		audio_play_sound(Jump, 6, false);	
@@ -101,11 +112,31 @@ if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == s
 		vspd = -flatJump;
 } 
 
+else if (!place_meeting(x, y + 1, obj_platfloorParent) && sign(vspd) < 0 && sprite_index == spr_runAnimWandLeft) {
+
+	sprite_index = spr_jumpAnimWandLeft;  	
+}
+
+if (sign(vspd) == 0 && place_meeting(x, y + 1, obj_platfloorParent) && sprite_index == spr_jumpAnimWandLeft)
+	sprite_index = spr_runAnimWandLeft;
+
+
+
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnim) {
 		audio_play_sound(Jump, 6, false);
 		isJumping = true;
 		vspd = -flatJump;
 }
+
+else if (!place_meeting(x, y + 1, obj_platfloorParent) && sign(vspd) < 0 && sprite_index == spr_wandAnim) {
+	
+	sprite_index = spr_jumpAnimWand; 
+}
+
+if (sign(vspd) == 0 && sign(move) == 0 && place_meeting(x, y + 1, obj_platfloorParent) && sprite_index == spr_jumpAnimWand)
+	sprite_index = spr_wandAnim;
+
+
 
 if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == spr_wandAnimLeft) {
 		audio_play_sound(Jump, 6, false);
@@ -113,6 +144,13 @@ if (place_meeting(x, y + 1, obj_platfloorParent) && keyJump && sprite_index == s
 		vspd = -flatJump;
 }
 
+else if (!place_meeting(x, y + 1, obj_platfloorParent) && sign(vspd) < 0 && sprite_index == spr_wandAnimLeft) {	 
+	
+	sprite_index = spr_jumpAnimWandLeft; 	
+}
+
+if (sign(vspd) == 0 && sign(move) == 0 && place_meeting(x, y + 1, obj_platfloorParent) && sprite_index == spr_jumpAnimWandLeft)
+	sprite_index = spr_wandAnimLeft;
 
 // Ceiling
 if (place_meeting(x, y + vspd,obj_EnvironmentPieceParent))
