@@ -315,6 +315,21 @@ if((keyFire) && (firingDelay < 0))
 	}
 }
 
+if(place_meeting(x,y,obj_damageBox))
+{
+	if(faceLeft)
+	{
+		sprite_index = spr_damageAnimL;
+		alarm[0] = room_speed*.5;
+	}
+	else
+	{
+		sprite_index = spr_damageAnim;
+		alarm[0] = room_speed*.5;
+	}
+}
+
+
 //Climbing 
 if (keyUp || keyDown) 
 	if (place_meeting(x, y, parent_ladder)) 
